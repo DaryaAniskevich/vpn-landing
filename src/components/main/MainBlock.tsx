@@ -5,11 +5,18 @@ import user from "@/assets/images/main_user.png";
 import OrangeButton from "../UI/buttons/OrangeButton";
 import Trusted from "./Trusted";
 import Info from "./Info";
+import { useContext } from "react";
+import { AppContext } from "@/context/appContext";
+import { scrollView } from "@/utils/helpers";
 
 function MainBlock() {
-  const getVpn = () => {};
+  const { mainBlockRef, chooseYourNameRef } = useContext(AppContext);
+
   return (
-    <section className="flex flex-col items-center text-center overflow-hidden">
+    <section
+      className="pt-[89px] md:pt-[133px] flex flex-col items-center text-center overflow-hidden"
+      ref={mainBlockRef}
+    >
       <h1 className="whitespace-pre-line text-black text-center largeTitle">
         Access{" "}
         <span className="text-blue">
@@ -30,7 +37,10 @@ function MainBlock() {
       />
 
       <div className="px-4">
-        <OrangeButton onClick={getVpn} className="mt-[17px]" />
+        <OrangeButton
+          onClick={() => scrollView(chooseYourNameRef)}
+          className="mt-[17px]"
+        />
 
         <Trusted />
         <Info />
