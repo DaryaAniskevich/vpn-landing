@@ -1,0 +1,16 @@
+.input + .label:before {
+  content: "";
+  display: flex;
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  @apply border-[2px] border-gray;
+}
+
+.input:checked + .label:before {
+  @apply border-orange bg-orange;
+  background-image: url('../../assets/images/check_icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -10,7 +10,7 @@ function MainBlock() {
   const getVpn = () => {};
   return (
     <section className="flex flex-col items-center text-center overflow-hidden">
-      <h1 className="whitespace-pre-line text-black font-bold text-center largeTitle">
+      <h1 className="whitespace-pre-line text-black text-center largeTitle">
         Access{" "}
         <span className="text-blue">
           everything <br />

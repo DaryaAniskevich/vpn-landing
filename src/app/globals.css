@@ -22,22 +22,30 @@ body {
 .largeTitle {
   font-size: 32px;
   line-height: 46px;
+  @apply font-bold;
 }
 
 .title1 {
   font-size: 28px;
   line-height: 34px;
+  @apply font-bold;
 }
 
 .title2 {
   font-size: 24px;
   line-height: 32px;
+  @apply font-bold;
 }
 
 .subtitle,
 .textBody {
   font-size: 16px;
   line-height: 24px;
+}
+
+.subtitle,
+.text {
+  @apply font-semibold;
 }
 
 .text,
@@ -49,4 +57,8 @@ body {
 .footnote {
   font-size: 13px;
   line-height: 18px;
+}
+.textBody,
+.footnote {
+  @apply font-medium;
 }

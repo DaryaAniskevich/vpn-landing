@@ -18,7 +18,7 @@ function BenefitItem({ data }: BenefitItemProps) {
         <Image src={img} alt={titleOrange} width={50} height={50} />
       </div>
 
-      <h2 className="mb-2 title1 flex flex-col items-center font-bold uppercase">
+      <h2 className="mb-2 title1 flex flex-col items-center uppercase">
         <span className="text-orange">{titleOrange}</span>
         <span className="text-blue">{titleBlue}</span>
       </h2>

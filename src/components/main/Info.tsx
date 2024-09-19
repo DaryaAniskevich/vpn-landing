@@ -1,6 +1,7 @@
 import Image from "next/image";
 import location from "@/assets/images/location.svg";
 import servers from "@/assets/images/servers.svg";
+import { Fragment } from "react";
 
 type InfoData = {
   number: string;
@@ -27,7 +28,7 @@ function InfoItem({ data }: { data: InfoData }) {
     <div className="flex items-center gap-[13px]">
       <Image src={img} alt={text} width={24} height={24} />
       <div className="flex flex-col items-start">
-        <span className="title2 text-black font-bold">{number}+</span>
+        <span className="title2 text-black">{number}+</span>
         <span className="capture">{text}</span>
       </div>
     </div>
@@ -39,12 +40,12 @@ function Info() {
     <div className="mt-[24px] bg-white shadow-card py-[15px] px-[42px] rounded-2xl">
       <div className="max-w-[415px] w-full flex items-center justify-between mx-auto">
         {info.map((item, index, array) => (
-          <>
-            <InfoItem key={item.text} data={item} />
+          <Fragment key={item.text}>
+            <InfoItem data={item} />
             {index !== array.length - 1 && (
               <div className="w-[1px] h-8 bg-gray" />
             )}
-          </>
+          </Fragment>
         ))}
       </div>
     </div>

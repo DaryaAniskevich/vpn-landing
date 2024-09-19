@@ -18,36 +18,36 @@ function Logo() {
       <path
         d="M14.9666 29.1938C22.392 29.1938 28.4114 23.1743 28.4114 15.7489C28.4114 8.32354 22.392 2.30408 14.9666 2.30408C7.54119 2.30408 1.52173 8.32354 1.52173 15.7489C1.52173 23.1743 7.54119 29.1938 14.9666 29.1938Z"
         stroke="white"
-        stroke-width="1.36583"
-        stroke-miterlimit="10"
+        strokeWidth="1.36583"
+        strokeMiterlimit="10"
       />
       <path
         d="M28.1486 15.2615C22.3915 9.83817 14.235 8.50522 7.30127 11.165C7.04936 11.2626 6.80052 11.3633 6.55475 11.47"
         stroke="url(#paint0_linear_30_1145)"
-        stroke-width="1.34448"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
+        strokeWidth="1.34448"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
       />
       <path
         d="M24.6003 18.635C16.8463 22.1366 7.64537 20.2947 1.54416 15.1887"
         stroke="url(#paint1_linear_30_1145)"
-        stroke-width="1.34448"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
+        strokeWidth="1.34448"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
       />
       <path
         d="M15.1235 29.1938C20.2051 22.8243 21.4308 13.8447 18.0445 7.01239C17.9237 6.76586 17.7937 6.52013 17.6609 6.27772"
         stroke="url(#paint2_linear_30_1145)"
-        stroke-width="1.34448"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
+        strokeWidth="1.34448"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
       />
       <path
         d="M12.316 24.3504C8.24275 17.2176 8.92772 8.70184 13.3686 2.41048"
         stroke="url(#paint3_linear_30_1145)"
-        stroke-width="1.34448"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
+        strokeWidth="1.34448"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
       />
       <ellipse
         cx="12.3303"
@@ -86,8 +86,8 @@ function Logo() {
           y2="15.1954"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" stop-opacity="0" />
-          <stop offset="1" stop-color="white" />
+          <stop stopColor="white" stopOpacity="0" />
+          <stop offset="1" stopColor="white" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_30_1145"
@@ -97,8 +97,8 @@ function Logo() {
           y2="19.298"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_30_1145"
@@ -108,8 +108,8 @@ function Logo() {
           y2="29.402"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" stop-opacity="0" />
-          <stop offset="1" stop-color="white" />
+          <stop stopColor="white" stopOpacity="0" />
+          <stop offset="1" stopColor="white" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_30_1145"
@@ -119,8 +119,8 @@ function Logo() {
           y2="36.3723"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
       </defs>
     </svg>
