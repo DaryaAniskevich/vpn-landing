@@ -13,14 +13,15 @@ const config: Config = {
         foreground: "var(--foreground)",
         blue: "#3177F2",
         orange: "#FF5D17",
-        orangeLight: '#FF8317',
+        orangeLight: "#FF8317",
         black: "#2B2B2B",
         gray: "#646464",
+        grayLight: "#F8F8F8",
         white: "#FFFFFF",
       },
       content: {
         branch: 'url("/branch.svg")',
-        star: 'url("/star.svg")'
+        star: 'url("/star.svg")',
       },
       boxShadow: {
         header: "0px 4px 16px 0px #00000024",

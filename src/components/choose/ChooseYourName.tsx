@@ -1,7 +1,7 @@
 "use client";
 
 import { UserData } from "@/utils/types";
-import Input from "./Input";
+import RadioInput from "./RadioInput";
 import { useContext, useEffect, useState } from "react";
 import { AppContext } from "@/context/appContext";
 import OrangeButton from "../UI/buttons/OrangeButton";
@@ -11,7 +11,7 @@ type ChooseYourName = {
 };
 
 function ChooseYourName({ data }: ChooseYourName) {
-  const { chooseYourNameRef, chosenInput, setChosenInput } =
+  const { chooseYourNameRef, chosenInput, setChosenInput, toggleModal } =
     useContext(AppContext);
 
   const onChange = (value: string) => {
@@ -25,7 +25,10 @@ function ChooseYourName({ data }: ChooseYourName) {
   }, [data]);
 
   return (
-    <section className="px-4 pt-[40px] md:pt-[72px]" ref={chooseYourNameRef}>
+    <section
+      className="px-4 pt-[40px] md:pt-[72px] pb-[37px] md:pb-[93px]"
+      ref={chooseYourNameRef}
+    >
       <h3 className="text-black title1 mb-4 uppercase">
         Choose <span className="text-blue">your name</span>
       </h3>
@@ -35,7 +38,7 @@ function ChooseYourName({ data }: ChooseYourName) {
           data.map((item) => {
             const name = `${item.name.first} ${item.name.last}`;
             return (
-              <Input
+              <RadioInput
                 key={name}
                 name={name}
                 isChecked={name === chosenInput}
@@ -45,7 +48,7 @@ function ChooseYourName({ data }: ChooseYourName) {
           })}
       </ul>
 
-      <OrangeButton onClick={() => {}} className="w-full" />
+      <OrangeButton onClick={() => toggleModal(true)} className="w-full" />
     </section>
   );
 }

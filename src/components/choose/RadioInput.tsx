@@ -1,6 +1,6 @@
-import style from "./Input.module.css";
+import style from "./RadioInput.module.css";
 
-function Input({
+function RadioInput({
   name,
   isChecked,
   onChange,
@@ -31,4 +31,4 @@ function Input({
   );
 }
 
-export default Input;
+export default RadioInput;
