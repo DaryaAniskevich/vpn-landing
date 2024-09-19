@@ -19,6 +19,7 @@ const config: Config = {
       },
       content: {
         branch: 'url("/branch.svg")',
+        star: 'url("/star.svg")'
       },
       boxShadow: {
         header: "0px 4px 16px 0px #00000024",
