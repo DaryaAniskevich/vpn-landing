@@ -11,11 +11,18 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        blue: '#3177F2',
-        orange: '#FF5D17',
-        black: '#2B2B2B',
-        gray: '#646464',
-        white: '#FFFFFF',
+        blue: "#3177F2",
+        orange: "#FF5D17",
+        black: "#2B2B2B",
+        gray: "#646464",
+        white: "#FFFFFF",
+      },
+      content: {
+        branch: 'url("/branch.svg")',
+      },
+      boxShadow: {
+        header: "0px 4px 16px 0px #00000024",
+        card: "0px 2.09px 11.06px 0px #00000040",
       },
     },
   },
