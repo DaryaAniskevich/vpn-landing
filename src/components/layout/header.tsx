@@ -1,6 +1,6 @@
 "use client";
 
-import { MutableRefObject, useContext } from "react";
+import { useContext } from "react";
 import BlueButton from "../UI/buttons/BlueButton";
 import LogoButton from "../UI/buttons/LogoButton";
 import { AppContext } from "@/context/appContext";

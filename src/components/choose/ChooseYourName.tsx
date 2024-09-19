@@ -2,7 +2,7 @@
 
 import { UserData } from "@/utils/types";
 import RadioInput from "./RadioInput";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import { AppContext } from "@/context/appContext";
 import OrangeButton from "../UI/buttons/OrangeButton";
 
@@ -15,14 +15,14 @@ function ChooseYourName({ data }: ChooseYourName) {
     useContext(AppContext);
 
   const onChange = (value: string) => {
-    setChosenInput && setChosenInput(value);
+    setChosenInput?.(value);
   };
 
   useEffect(() => {
     const item = data[0];
     const name = `${item.name.first} ${item.name.last}`;
-    setChosenInput && setChosenInput(name);
-  }, [data]);
+    setChosenInput?.(name);
+  }, [data, setChosenInput]);
 
   return (
     <section
